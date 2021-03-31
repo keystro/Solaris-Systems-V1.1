@@ -1,2 +1,2 @@
 # Solaris-Systems
-IoT API for solar system
+IoT API for remote monitoring
