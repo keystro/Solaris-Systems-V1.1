@@ -1,2 +1,5 @@
 # Solaris-Systems
-IoT API for remote monitoring
+IoT Server for Remote Solar Systems Monitoring
+
+IoT device = ESP8266 &/ EPS32
+
