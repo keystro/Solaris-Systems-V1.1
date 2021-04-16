@@ -1,0 +1,40 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %} Solis Remote Systems {% endblock title %}
+
+
+
+{% block navbar %}
+    <nav class="navbar navbar-dark bg-dark" style="background-color: #001524;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only" >Toggle navigation</span>
+                    <span class="icon-bar" style="background-color: lightgray;"></span>
+                    <span class="icon-bar" style="background-color: lightgray;" ></span>
+                    <span class="icon-bar" style="background-color: lightgray;" ></span>
+                </button>
+                <a class="navbar-brand" style="color: lightgray; font-size: 18px; font-weight: bold;" href="{{ url_for('index')}}">Solis Systems</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav" >
+                    <li><a href="{{ url_for('index')}}" style="color: ghostwhite;">Home</a></li>
+                    <li><a href="#" style="color: ghostwhite;">Telemetry</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{{ url_for('login')}}" style="color: ghostwhite;">Sign In</a></li>
+                    <li><a href="{{ url_for('register')}}" style="color: ghostwhite;">Sign Up</a></li>
+                    <li><a href="{{ url_for('account')}}" style="color: ghostwhite;">Profile</a></li>
+                    <li><a href="{{ url_for('logout')}}" style="color: ghostwhite;">Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+{% endblock navbar %}
+
+{% block content %}
+    <div class="container">
+
+        {% block main_content %} {% endblock main_content %}
+    </div>
+{% endblock content %}
